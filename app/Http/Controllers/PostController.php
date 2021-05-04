@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
     public function index(){
-        return "Estou na controller de Posts";
+        $posts = Post::get();
+
+        dd($posts);
+        return view('admin.posts.index');
     }
 }
