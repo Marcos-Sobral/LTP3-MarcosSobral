@@ -1,5 +1,6 @@
 <h1> Lista </h1>
 
 @foreach($posts as $post)
-     <p>{{$post->title}}<p>
+     <p><b>{{$post->title}}</b><p>
+     <p>{{$post->content}}<p>
 @endforeach
