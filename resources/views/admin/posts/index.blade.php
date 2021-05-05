@@ -5,4 +5,4 @@
      <p>{{$post->content}}<p>
 @endforeach
 
-<a href="{{ route('posts.action') }}">ADD</a>
+<a href="{{ route('posts.create') }}">ADD</a>

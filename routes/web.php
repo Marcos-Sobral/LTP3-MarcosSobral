@@ -7,9 +7,9 @@ use App\Http\Controllers\{
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
-Route::post('/posts', [PostController::class, 'story'])->name('posts.story');
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 
-Route::get('/posts/action', [PostController::class, 'action'])->name('posts.action');
+Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
 
 Route::get('/', function () {
     return view('welcome');

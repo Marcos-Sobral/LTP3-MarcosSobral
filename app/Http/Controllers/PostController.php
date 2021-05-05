@@ -12,12 +12,12 @@ class PostController extends Controller
         return view('admin.posts.index', compact('posts'));
     }
 
-    public function action(){
-        return view('admin.posts.action');
+    public function create(){
+        return view('admin.posts.create');
     }  
 
-    public function story(Request $request){
-        $post = Post::action($request->all());
+    public function store(Request $request){
+        $post = Post::create($request->all());
         return 'ok';
     }    
 }
